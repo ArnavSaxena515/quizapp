@@ -1,3 +1,5 @@
+//Simple widget designed to display the question text passed to it during instantiation.
+
 import 'package:flutter/material.dart';
 
 class Question extends StatelessWidget {

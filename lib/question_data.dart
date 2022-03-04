@@ -1,3 +1,5 @@
+// this file contains the questions, choices and answer data required for the app
+
 final questions = [
   {
     "questionText": "What is your favourite animal?",

@@ -1,6 +1,7 @@
+// widget designed to display the results of the quiz
+
 import 'package:basic_quiz_app/share_result.dart';
 import 'package:flutter/material.dart';
-
 import 'common_button.dart';
 
 class Result extends StatelessWidget {
@@ -12,7 +13,7 @@ class Result extends StatelessWidget {
   String get resultText {
     String text = "";
     if (score < 5) {
-      text = "You're all sunshines and rainbows";
+      text = "You're all sunshine and rainbows";
     } else if (score < 15) {
       text = "You're a positive person";
     } else if (score < 25) {
@@ -22,6 +23,7 @@ class Result extends StatelessWidget {
     }
     return text;
   }
+  // getter designed to return a result string based on the score attained by the user.
 
   @override
   Widget build(BuildContext context) {
@@ -63,11 +65,11 @@ class Result extends StatelessWidget {
                     CommonButton(
                       buttonFunction: resetQuiz,
                       buttonText: "Reset Quiz",
-                    ),
+                    ), // button that will restart the quiz
                     ShareResult(
                       resultText: resultText,
                       score: score,
-                    ),
+                    ), //button designed to share the results of the quiz to other applications.
                   ],
                 ),
               )

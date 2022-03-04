@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//common button format designed for the app
 class CommonButton extends StatelessWidget {
   const CommonButton({
     Key? key,

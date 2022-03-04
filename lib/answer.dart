@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
+//widget designed to display various options associated with a question
 class Answer extends StatelessWidget {
   final VoidCallback selectHandler;
   final String buttonText;
 
   const Answer({Key? key, required this.selectHandler, required this.buttonText}) : super(key: key);
-
-  // const Answer.elevatedButton({Key? key, required this.selectHandler, required this.buttonText}) : super(key: key);
-  //const Answer(this.buttonText,this.selectHandler);
 
   @override
   Widget build(BuildContext context) {

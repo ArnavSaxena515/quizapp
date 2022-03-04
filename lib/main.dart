@@ -26,10 +26,10 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _questionIndex++;
     });
-    //print(_questionIndex);
+    //Increment the question index to change the question and options shown on the screen
   }
 
-  void _resetQuiz() => setState(() => _totalScore = _questionIndex = 0);
+  void _resetQuiz() => setState(() => _totalScore = _questionIndex = 0); // reset index and score to 0 and rebuild the corresponding widgets using setState
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +48,7 @@ class _MyAppState extends State<MyApp> {
                 score: _totalScore,
                 resetQuiz: _resetQuiz,
               ),
+        // Ternary operator to choose between the quiz widget and the result widget depending on the value of the quiz index
         //const Text("Over"),
       ),
     );
